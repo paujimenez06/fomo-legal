@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacitat · FOMO</title>
+<link rel="stylesheet" href="estil.css">
+</head>
+<body>
+<main>
+
+<nav>
+  <button data-lang="ca" aria-current="true">Català</button>
+  <button data-lang="es" aria-current="false">Castellano</button>
+  <button data-lang="en" aria-current="false">English</button>
+</nav>
+<div class="pages">
+  <a href="privacitat.html" aria-current="page">Privacitat</a>
+  <a href="termes.html">Termes i condicions</a>
+  <a href="seguretat.html">Seguretat</a>
+</div>
+
+<!-- ══════════════════ CATALÀ ══════════════════ -->
+<section id="ca">
+  <h1>Política de privacitat</h1>
+  <p class="sub">FOMO · Darrera actualització: 31 d'agost de 2026</p>
+
+  <div class="box">
+    <p><strong>El resum, en tres frases.</strong> La teva ubicació no surt mai del
+    telèfon: es fa servir dins l'aplicació per calcular a quina distància tens
+    cada festa. Només guardem al servidor el que fa falta per a allò que has
+    demanat expressament. I si desactives les notificacions, les dades que
+    servien per enviar-te-les <strong>s'esborren</strong>, no es desen apagades.</p>
+  </div>
+
+  <h2>Qui és el responsable</h2>
+  <p>El responsable del tractament és l'editor de l'aplicació FOMO. Per a
+  qualsevol qüestió sobre aquesta política o sobre les teves dades, pots
+  escriure a <a href="mailto:n23639003@gmail.com">n23639003@gmail.com</a>.</p>
+
+  <h2>Què tractem, per què, i amb quina base legal</h2>
+  <table>
+    <tr><th>Dada</th><th>Per a què</th><th>On va</th><th>Base legal</th></tr>
+    <tr>
+      <td>Ubicació del dispositiu</td>
+      <td>Calcular a quina distància tens cada esdeveniment i ordenar-los</td>
+      <td><strong>Enlloc.</strong> Es fa servir al telèfon i no s'envia ni es desa</td>
+      <td>Consentiment (el permís del sistema)</td>
+    </tr>
+    <tr>
+      <td>Adreça electrònica i nom</td>
+      <td>Tenir un compte i poder entrar-hi</td>
+      <td>Firebase Authentication i Firestore</td>
+      <td>Execució del servei que has demanat</td>
+    </tr>
+    <tr>
+      <td>Data de naixement</td>
+      <td>Comprovar que tens l'edat mínima. Es demana en registrar-te</td>
+      <td>Firestore</td>
+      <td>Execució del servei</td>
+    </tr>
+    <tr>
+      <td>Poble de referència i artistes que segueixes</td>
+      <td>Poder-te avisar quan hi ha alguna cosa a prop o d'algú que segueixes</td>
+      <td>Firestore, <strong>només si actives les notificacions</strong></td>
+      <td>Consentiment</td>
+    </tr>
+    <tr>
+      <td>Identificador de notificacions del dispositiu</td>
+      <td>Enviar l'avís al telèfon correcte</td>
+      <td>Firestore i Firebase Cloud Messaging</td>
+      <td>Consentiment</td>
+    </tr>
+    <tr>
+      <td>Preferències (interessos, radi, idioma, tema)</td>
+      <td>Recordar com vols veure la llista</td>
+      <td><strong>Només al telèfon.</strong> No s'envien</td>
+      <td>Execució del servei</td>
+    </tr>
+  </table>
+
+  <h2>Què NO fem</h2>
+  <ul>
+    <li>No fem seguiment de la teva ubicació en segon pla. L'aplicació no demana
+    aquest permís i no té cap registre d'on has estat.</li>
+    <li>Demanem la ubicació precisa, però <strong>només mentre fas servir
+    l'aplicació</strong> i només per calcular distàncies al teu telèfon. Amb la
+    ubicació aproximada d'Android la posició pot desviar-se un parell de
+    quilòmetres, prou per assenyalar el poble equivocat. Android et deixa triar
+    <em>Precisa</em> o <em>Aproximada</em> quan et demana el permís, i
+    l'aplicació funciona amb totes dues.</li>
+    <li>No venem ni cedim dades a tercers amb finalitats comercials.</li>
+    <li>No fem publicitat ni perfilat publicitari.</li>
+    <li>No hi ha analítica de comportament dins l'aplicació.</li>
+  </ul>
+
+  <h2>Serveis de tercers</h2>
+  <p>Perquè l'aplicació funcioni, el teu dispositiu es connecta a:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (autenticació, base de dades i
+    notificacions). Google actua com a encarregat del tractament.</li>
+    <li><strong>OpenStreetMap</strong>, per a les imatges del mapa. Reben la
+    petició de les caselles que mires, i per tant quina zona estàs mirant.</li>
+    <li><strong>Deezer</strong> i <strong>MusicBrainz</strong>, quan cerques o
+    obres la fitxa d'un artista. Reben el nom cercat, mai qui el cerca.</li>
+    <li><strong>Google Fonts</strong>, per a la tipografia.</li>
+  </ul>
+  <p>Si toques un enllaç extern (Spotify, YouTube, SoundCloud, TikTok, venda
+  d'entrades…), s'obre al navegador i a partir d'aquí s'hi aplica la política
+  d'aquell lloc, no aquesta.</p>
+
+  <h2>On es tracten les dades</h2>
+  <p>Firebase és un servei de Google. Encara que el servei el contractem des
+  d'Europa, <strong>Google pot tractar aquestes dades en servidors de fora de
+  l'Espai Econòmic Europeu</strong>, principalment als Estats Units. Aquestes
+  transferències es fan a l'empara de les clàusules contractuals tipus aprovades
+  per la Comissió Europea. Els altres serveis que hem llistat (OpenStreetMap, Deezer,
+  MusicBrainz, Google Fonts) reben la petició directament del teu dispositiu, i
+  per tant la teva adreça IP, sense que hi intervinguem.</p>
+
+  <h2>Quant de temps ho guardem</h2>
+  <ul>
+    <li><strong>El compte</strong>: mentre el tinguis obert.</li>
+    <li><strong>Les dades de notificacions</strong>: fins que les desactivis. En
+    desactivar-les s'esborra el registre del servidor.</li>
+    <li><strong>Les preferències del telèfon</strong>: fins que desinstal·lis
+    l'aplicació o n'esborris les dades.</li>
+  </ul>
+
+  <h2>Els teus drets</h2>
+  <p>Pots demanar accés, rectificació, supressió, portabilitat, limitació o
+  oposició al tractament, i retirar el consentiment quan vulguis. Pots desactivar les
+  notificacions des de l'aplicació mateixa, i en fer-ho s'esborren del servidor
+  les dades que hi servien. <strong>Per esborrar el compte, escriu-nos a
+  l'adreça de dalt</strong>: el suprimirem, amb tot el que hi vagi associat, i
+  no cal que ens diguis per què. També pots presentar una reclamació davant l'<a
+  href="https://apdcat.gencat.cat/">Autoritat Catalana de Protecció de Dades</a>.</p>
+
+  <h2>Menors</h2>
+  <p>L'aplicació no s'adreça a menors de 14 anys i no en recull dades
+  conscientment.</p>
+
+  <h2>Canvis</h2>
+  <p>Si aquesta política canvia, actualitzarem la data del principi i, si el
+  canvi és rellevant, t'ho farem saber dins l'aplicació.</p>
+</section>
+
+<!-- ══════════════════ CASTELLANO ══════════════════ -->
+<section id="es" hidden>
+  <h1>Política de privacidad</h1>
+  <p class="sub">FOMO · Última actualización: 31 de agosto de 2026</p>
+
+  <div class="box">
+    <p><strong>El resumen, en tres frases.</strong> Tu ubicación no sale nunca
+    del teléfono: se usa dentro de la aplicación para calcular a qué distancia
+    tienes cada fiesta. Solo guardamos en el servidor lo necesario para aquello
+    que has pedido expresamente. Y si desactivas las notificaciones, los datos
+    que servían para enviártelas <strong>se borran</strong>, no se guardan
+    apagados.</p>
+  </div>
+
+  <h2>Quién es el responsable</h2>
+  <p>El responsable del tratamiento es el editor de la aplicación FOMO. Para
+  cualquier cuestión sobre esta política o sobre tus datos, puedes escribir a
+  <a href="mailto:n23639003@gmail.com">n23639003@gmail.com</a>.</p>
+
+  <h2>Qué tratamos, para qué y con qué base legal</h2>
+  <table>
+    <tr><th>Dato</th><th>Para qué</th><th>Dónde va</th><th>Base legal</th></tr>
+    <tr>
+      <td>Ubicación del dispositivo</td>
+      <td>Calcular a qué distancia tienes cada evento y ordenarlos</td>
+      <td><strong>A ningún sitio.</strong> Se usa en el teléfono y no se envía ni se guarda</td>
+      <td>Consentimiento (el permiso del sistema)</td>
+    </tr>
+    <tr>
+      <td>Correo electrónico y nombre</td>
+      <td>Tener una cuenta y poder acceder</td>
+      <td>Firebase Authentication y Firestore</td>
+      <td>Ejecución del servicio solicitado</td>
+    </tr>
+    <tr>
+      <td>Fecha de nacimiento</td>
+      <td>Comprobar que tienes la edad mínima. Se pide al registrarte</td>
+      <td>Firestore</td>
+      <td>Ejecución del servicio</td>
+    </tr>
+    <tr>
+      <td>Pueblo de referencia y artistas que sigues</td>
+      <td>Poder avisarte cuando hay algo cerca o de alguien que sigues</td>
+      <td>Firestore, <strong>solo si activas las notificaciones</strong></td>
+      <td>Consentimiento</td>
+    </tr>
+    <tr>
+      <td>Identificador de notificaciones del dispositivo</td>
+      <td>Enviar el aviso al teléfono correcto</td>
+      <td>Firestore y Firebase Cloud Messaging</td>
+      <td>Consentimiento</td>
+    </tr>
+    <tr>
+      <td>Preferencias (intereses, radio, idioma, tema)</td>
+      <td>Recordar cómo quieres ver la lista</td>
+      <td><strong>Solo en el teléfono.</strong> No se envían</td>
+      <td>Ejecución del servicio</td>
+    </tr>
+  </table>
+
+  <h2>Qué NO hacemos</h2>
+  <ul>
+    <li>No rastreamos tu ubicación en segundo plano. La aplicación no pide ese
+    permiso y no tiene ningún registro de dónde has estado.</li>
+    <li>Pedimos la ubicación precisa, pero <strong>solo mientras usas la
+    aplicación</strong> y solo para calcular distancias en tu teléfono. Con la
+    ubicación aproximada de Android la posición puede desviarse un par de
+    kilómetros, suficiente para señalar el pueblo equivocado. Android te deja
+    elegir <em>Precisa</em> o <em>Aproximada</em> al pedirte el permiso, y la
+    aplicación funciona con ambas.</li>
+    <li>No vendemos ni cedemos datos a terceros con fines comerciales.</li>
+    <li>No hacemos publicidad ni perfilado publicitario.</li>
+    <li>No hay analítica de comportamiento dentro de la aplicación.</li>
+  </ul>
+
+  <h2>Servicios de terceros</h2>
+  <p>Para que la aplicación funcione, tu dispositivo se conecta a:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (autenticación, base de datos y
+    notificaciones), como encargado del tratamiento.</li>
+    <li><strong>OpenStreetMap</strong>, para las imágenes del mapa. Reciben
+    la petición de las casillas que miras, y por tanto qué zona estás mirando.</li>
+    <li><strong>Deezer</strong> y <strong>MusicBrainz</strong>, al buscar o
+    abrir la ficha de un artista. Reciben el nombre buscado, nunca quién busca.</li>
+    <li><strong>Google Fonts</strong>, para la tipografía.</li>
+  </ul>
+  <p>Si tocas un enlace externo (Spotify, YouTube, SoundCloud, TikTok, venta de
+  entradas…), se abre en el navegador y a partir de ahí se aplica la política de
+  ese sitio, no esta.</p>
+
+  <h2>Dónde se tratan los datos</h2>
+  <p>Firebase es un servicio de Google. Aunque el servicio se contrate desde
+  Europa, <strong>Google puede tratar estos datos en servidores fuera del Espacio
+  Económico Europeo</strong>, principalmente en Estados Unidos. Estas
+  transferencias se amparan en las cláusulas contractuales tipo aprobadas por la
+  Comisión Europea. Los demás servicios listados (OpenStreetMap, Deezer, MusicBrainz,
+  Google Fonts) reciben la petición directamente de tu dispositivo, y por tanto
+  tu dirección IP, sin que nosotros intervengamos.</p>
+
+  <h2>Cuánto tiempo lo guardamos</h2>
+  <ul>
+    <li><strong>La cuenta</strong>: mientras la tengas abierta.</li>
+    <li><strong>Los datos de notificaciones</strong>: hasta que las desactives.
+    Al desactivarlas se borra el registro del servidor.</li>
+    <li><strong>Las preferencias del teléfono</strong>: hasta que desinstales la
+    aplicación o borres sus datos.</li>
+  </ul>
+
+  <h2>Tus derechos</h2>
+  <p>Puedes solicitar acceso, rectificación, supresión, portabilidad, limitación
+  u oposición al tratamiento, y retirar el consentimiento cuando quieras. Puedes desactivar las
+  notificaciones desde la propia aplicación, y al hacerlo se borran del servidor
+  los datos que servían para enviarlas. <strong>Para borrar la cuenta, escríbenos
+  a la dirección de arriba</strong>: la suprimiremos, con todo lo asociado, y no
+  hace falta que nos digas por qué. También puedes presentar una reclamación ante la
+  <a href="https://apdcat.gencat.cat/">Autoridad Catalana de Protección de
+  Datos</a> o la <a href="https://www.aepd.es/">AEPD</a>.</p>
+
+  <h2>Menores</h2>
+  <p>La aplicación no se dirige a menores de 14 años y no recoge sus datos
+  conscientemente.</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, actualizaremos la fecha del principio y, si el
+  cambio es relevante, te lo haremos saber dentro de la aplicación.</p>
+</section>
+
+<!-- ══════════════════ ENGLISH ══════════════════ -->
+<section id="en" hidden>
+  <h1>Privacy policy</h1>
+  <p class="sub">FOMO · Last updated: 31 August 2026</p>
+
+  <div class="box">
+    <p><strong>The short version.</strong> Your location never leaves your
+    phone: it is used inside the app to work out how far away each festival is.
+    We only store on the server what is needed for something you explicitly
+    asked for. And if you turn notifications off, the data used to send them is
+    <strong>deleted</strong>, not kept in a switched-off state.</p>
+  </div>
+
+  <h2>Who is responsible</h2>
+  <p>The data controller is the publisher of the FOMO app. For anything about
+  this policy or your data, write to
+  <a href="mailto:n23639003@gmail.com">n23639003@gmail.com</a>.</p>
+
+  <h2>What we process, why, and on what legal basis</h2>
+  <table>
+    <tr><th>Data</th><th>Purpose</th><th>Where it goes</th><th>Legal basis</th></tr>
+    <tr>
+      <td>Device location</td>
+      <td>Working out how far each event is, and sorting by it</td>
+      <td><strong>Nowhere.</strong> Used on the phone, never sent or stored</td>
+      <td>Consent (the system permission)</td>
+    </tr>
+    <tr>
+      <td>Email address and name</td>
+      <td>Having an account and signing in</td>
+      <td>Firebase Authentication and Firestore</td>
+      <td>Performance of the service you asked for</td>
+    </tr>
+    <tr>
+      <td>Date of birth</td>
+      <td>Checking you meet the minimum age. Asked when you sign up</td>
+      <td>Firestore</td>
+      <td>Performance of the service</td>
+    </tr>
+    <tr>
+      <td>Home town and the artists you follow</td>
+      <td>Being able to tell you when something is on nearby or by someone you follow</td>
+      <td>Firestore, <strong>only if you turn notifications on</strong></td>
+      <td>Consent</td>
+    </tr>
+    <tr>
+      <td>Device notification token</td>
+      <td>Sending the message to the right phone</td>
+      <td>Firestore and Firebase Cloud Messaging</td>
+      <td>Consent</td>
+    </tr>
+    <tr>
+      <td>Preferences (interests, radius, language, theme)</td>
+      <td>Remembering how you want the list shown</td>
+      <td><strong>On the phone only.</strong> Never sent</td>
+      <td>Performance of the service</td>
+    </tr>
+  </table>
+
+  <h2>What we do NOT do</h2>
+  <ul>
+    <li>We do not track your location in the background. The app does not ask
+    for that permission and holds no record of where you have been.</li>
+    <li>We request precise location, but <strong>only while you are using the
+    app</strong> and only to work out distances on your phone. With Android's
+    approximate location the position can be a couple of kilometres out — enough
+    to name the wrong town. Android lets you choose <em>Precise</em> or
+    <em>Approximate</em> when it asks, and the app works with either.</li>
+    <li>We do not sell or share data with third parties for commercial purposes.</li>
+    <li>There is no advertising and no ad profiling.</li>
+    <li>There is no behavioural analytics inside the app.</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>For the app to work, your device connects to:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (authentication, database and
+    notifications), acting as a data processor.</li>
+    <li><strong>OpenStreetMap</strong>, for the map tiles. They receive the
+    request for the tiles you look at, and so which area you are looking at.</li>
+    <li><strong>Deezer</strong> and <strong>MusicBrainz</strong>, when you search
+    for or open an artist. They receive the name searched, never who searched it.</li>
+    <li><strong>Google Fonts</strong>, for typography.</li>
+  </ul>
+  <p>If you tap an external link (Spotify, YouTube, SoundCloud, TikTok, ticket
+  sales…), it opens in your browser and that site's policy applies from then on,
+  not this one.</p>
+
+  <h2>Where the data is processed</h2>
+  <p>Firebase is a Google service. Even where the service is contracted from
+  Europe, <strong>Google may process this data on servers outside the European
+  Economic Area</strong>, mainly in the United States. Those transfers rely on
+  the standard contractual clauses approved by the European Commission. The other
+  services listed (OpenStreetMap, Deezer, MusicBrainz, Google Fonts) receive the request
+  straight from your device, and therefore your IP address, with no involvement
+  from us.</p>
+
+  <h2>How long we keep it</h2>
+  <ul>
+    <li><strong>The account</strong>: while it is open.</li>
+    <li><strong>Notification data</strong>: until you turn notifications off,
+    which deletes the server-side record.</li>
+    <li><strong>On-device preferences</strong>: until you uninstall the app or
+    clear its data.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <p>You may request access, rectification, erasure, portability, restriction or
+  objection, and withdraw consent at any time. You can turn notifications off in the
+  app itself, which erases the data that served them from the server.
+  <strong>To delete your account, write to the address above</strong>: we will
+  remove it, and everything attached to it, without asking why. You may also lodge a complaint with the
+  <a href="https://apdcat.gencat.cat/">Catalan Data Protection Authority</a>.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children under 14 and does not knowingly collect
+  their data.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes we will update the date at the top and, where the
+  change is significant, tell you inside the app.</p>
+</section>
+
+<footer>
+  <p>FOMO · <a href="https://github.com/Oriburr/FESTES">codi obert a GitHub</a></p>
+</footer>
+
+</main>
+<script src="idioma.js"></script>
+</body>
+</html>

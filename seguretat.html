@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguretat · FOMO</title>
+<link rel="stylesheet" href="estil.css">
+</head>
+<body>
+<main>
+<nav>
+  <button data-lang="ca" aria-current="true">Català</button>
+  <button data-lang="es" aria-current="false">Castellano</button>
+  <button data-lang="en" aria-current="false">English</button>
+</nav>
+<div class="pages">
+  <a href="privacitat.html">Privacitat</a>
+  <a href="termes.html">Termes i condicions</a>
+  <a href="seguretat.html" aria-current="page">Seguretat</a>
+</div>
+
+<section id="ca">
+  <h1>Seguretat</h1>
+  <p class="sub">FOMO · Darrera actualització: 18 d'agost de 2026</p>
+
+  <div class="box">
+    <p>Aquesta pàgina explica com està protegit el que ens confies i com
+    reportar-nos un problema de seguretat. El codi és obert: tot el que diu aquí
+    es pot comprovar a
+    <a href="https://github.com/Oriburr/FESTES">GitHub</a>.</p>
+  </div>
+
+  <h2>Com viatgen les dades</h2>
+  <p>Totes les comunicacions entre l'aplicació i els servidors van xifrades amb
+  TLS (HTTPS). No hi ha cap petició en clar.</p>
+
+  <h2>Les contrasenyes</h2>
+  <p>Les gestiona <strong>Firebase Authentication</strong>, de Google. L'aplicació
+  no veu mai la teva contrasenya, no la desa i no la pot recuperar. També pots
+  entrar amb el compte de Google i no tenir-ne cap.</p>
+
+  <h2>Qui pot escriure què</h2>
+  <p>La base de dades té regles d'accés declarades i públiques
+  (<code>firestore.rules</code>). Les que importen:</p>
+  <ul>
+    <li><strong>El catàleg d'esdeveniments és de només lectura per a tothom.</strong>
+    Cap client hi pot escriure mai. Els escriptors són el procés automàtic del
+    servidor, que corre amb credencials que no viatgen dins l'aplicació.</li>
+    <li><strong>El teu perfil només el pots llegir i escriure tu</strong>, i
+    només els camps concrets que l'aplicació fa servir, amb el tipus esperat. Un
+    client manipulat no pot afegir-hi camps arbitraris.</li>
+    <li><strong>Els permisos especials no es poden reclamar.</strong> Els camps
+    que atorguen rols (per exemple, poder revisar el que envia un ajuntament)
+    estan explícitament prohibits a tots els clients: només els pot escriure el
+    procés del servidor. Un permís que un client es pogués posar tot sol és un
+    permís que qualsevol es pot posar.</li>
+    <li><strong>Res que enviï un ajuntament es publica sol.</strong> Passa per la
+    revisió d'una persona, i qui aprova tampoc no escriu al catàleg: ho fa el
+    procés del servidor. Així, un telèfon robat d'algú amb permisos de revisió no
+    pot posar esdeveniments falsos davant de ningú.</li>
+  </ul>
+
+  <h2>La teva ubicació</h2>
+  <p>No s'envia enlloc. Es fa servir dins el telèfon per calcular distàncies i no
+  es desa ni s'associa al teu compte. No hi ha seguiment en segon pla, i
+  l'aplicació no demana el permís que caldria per fer-ne.</p>
+
+  <h2>Minimització</h2>
+  <p>Al servidor només hi ha el que fa falta per a allò que has demanat. Si no
+  actives les notificacions, el poble i els artistes que segueixes no surten mai
+  del telèfon. Si les desactives, aquest registre <strong>s'esborra</strong>.</p>
+
+  <h2>Claus i secrets</h2>
+  <p>Les credencials que permeten escriure a la base de dades existeixen només a
+  l'entorn d'integració contínua, mai dins de l'aplicació. Una aplicació que
+  s'instal·la es pot obrir i llegir, així que res que hi hagi dins es pot
+  considerar secret — i per això no n'hi posem cap.</p>
+
+  <h2>Què no podem prometre</h2>
+  <p>Cap sistema és perfectament segur, i aquesta l'ha feta un
+  equip petit. Fem el que sabem i ho tenim escrit perquè es pugui comprovar, però
+  no podem garantir que no hi hagi cap fallada.</p>
+
+  <h2>Has trobat un problema? Explica'ns-el</h2>
+  <p>Si creus que has trobat una vulnerabilitat, escriu a
+  <a href="mailto:n23639003@gmail.com">n23639003@gmail.com</a> amb el màxim
+  detall que puguis: què has vist, com reproduir-ho i quin impacte creus que té.</p>
+  <p><strong>El nostre compromís:</strong> et respondrem, no emprendrem accions
+  legals contra qui investigui de bona fe i ens ho comuniqui de manera privada, i
+  et direm quan quedi resolt.</p>
+  <p><strong>El que et demanem:</strong> no accedeixis a dades d'altres persones
+  ni les modifiquis, no degradis el servei, i dona'ns un temps raonable per
+  arreglar-ho abans de fer-ho públic.</p>
+
+  <h2>Si hi hagués una fuita</h2>
+  <p>Si es produís una violació de seguretat que afecti dades personals, ho
+  notificarem a l'autoritat de protecció de dades dins de les 72 hores següents a
+  conèixer-la, i t'ho comunicarem directament si comporta un risc alt per a tu,
+  tal com exigeix el RGPD.</p>
+</section>
+
+<section id="es" hidden>
+  <h1>Seguridad</h1>
+  <p class="sub">FOMO · Última actualización: 18 de agosto de 2026</p>
+
+  <div class="box">
+    <p>Esta página explica cómo está protegido lo que nos confías y cómo
+    reportarnos un problema de seguridad. El código es abierto: todo lo que aquí
+    se dice puede comprobarse en
+    <a href="https://github.com/Oriburr/FESTES">GitHub</a>.</p>
+  </div>
+
+  <h2>Cómo viajan los datos</h2>
+  <p>Todas las comunicaciones entre la aplicación y los servidores van cifradas
+  con TLS (HTTPS). No hay ninguna petición en claro.</p>
+
+  <h2>Las contraseñas</h2>
+  <p>Las gestiona <strong>Firebase Authentication</strong>, de Google. La
+  aplicación no ve nunca tu contraseña, no la guarda y no puede recuperarla.
+  También puedes entrar con la cuenta de Google y no tener ninguna.</p>
+
+  <h2>Quién puede escribir qué</h2>
+  <p>La base de datos tiene reglas de acceso declaradas y públicas
+  (<code>firestore.rules</code>). Las que importan:</p>
+  <ul>
+    <li><strong>El catálogo de eventos es de solo lectura para todo el mundo.</strong>
+    Ningún cliente puede escribir en él. Los escritores son el proceso automático
+    del servidor, que se ejecuta con credenciales que no viajan dentro de la
+    aplicación.</li>
+    <li><strong>Tu perfil solo puedes leerlo y escribirlo tú</strong>, y solo los
+    campos concretos que la aplicación usa, con el tipo esperado. Un cliente
+    manipulado no puede añadir campos arbitrarios.</li>
+    <li><strong>Los permisos especiales no se pueden reclamar.</strong> Los campos
+    que otorgan roles (por ejemplo, poder revisar lo que envía un ayuntamiento)
+    están explícitamente prohibidos a todos los clientes: solo puede escribirlos
+    el proceso del servidor.</li>
+    <li><strong>Nada de lo que envía un ayuntamiento se publica solo.</strong>
+    Pasa por la revisión de una persona, y quien aprueba tampoco escribe en el
+    catálogo: lo hace el proceso del servidor. Así, un teléfono robado de alguien
+    con permisos de revisión no puede poner eventos falsos delante de nadie.</li>
+  </ul>
+
+  <h2>Tu ubicación</h2>
+  <p>No se envía a ningún sitio. Se usa dentro del teléfono para calcular
+  distancias y no se guarda ni se asocia a tu cuenta. No hay seguimiento en
+  segundo plano, y la aplicación no pide el permiso que haría falta para ello.</p>
+
+  <h2>Minimización</h2>
+  <p>En el servidor solo está lo necesario para aquello que has pedido. Si no
+  activas las notificaciones, el pueblo y los artistas que sigues no salen nunca
+  del teléfono. Si las desactivas, ese registro <strong>se borra</strong>.</p>
+
+  <h2>Claves y secretos</h2>
+  <p>Las credenciales que permiten escribir en la base de datos existen solo en
+  el entorno de integración continua, nunca dentro de la aplicación. Una
+  aplicación instalada puede abrirse y leerse, así que nada de lo que hay dentro
+  puede considerarse secreto — y por eso no ponemos ninguno.</p>
+
+  <h2>Qué no podemos prometer</h2>
+  <p>Ningún sistema es perfectamente seguro, y esta la ha hecho
+  un equipo pequeño. Hacemos lo que sabemos y lo dejamos escrito para que pueda
+  comprobarse, pero no podemos garantizar que no haya ningún fallo.</p>
+
+  <h2>¿Has encontrado un problema? Cuéntanoslo</h2>
+  <p>Si crees que has encontrado una vulnerabilidad, escribe a
+  <a href="mailto:n23639003@gmail.com">n23639003@gmail.com</a> con el máximo
+  detalle posible: qué has visto, cómo reproducirlo y qué impacto crees que tiene.</p>
+  <p><strong>Nuestro compromiso:</strong> te responderemos, no emprenderemos
+  acciones legales contra quien investigue de buena fe y nos lo comunique de
+  forma privada, y te diremos cuándo quede resuelto.</p>
+  <p><strong>Lo que te pedimos:</strong> no accedas a datos de otras personas ni
+  los modifiques, no degrades el servicio, y danos un tiempo razonable para
+  arreglarlo antes de hacerlo público.</p>
+
+  <h2>Si hubiera una filtración</h2>
+  <p>Si se produjera una violación de seguridad que afecte a datos personales, lo
+  notificaremos a la autoridad de protección de datos dentro de las 72 horas
+  siguientes a conocerla, y te lo comunicaremos directamente si conlleva un
+  riesgo alto para ti, tal como exige el RGPD.</p>
+</section>
+
+<section id="en" hidden>
+  <h1>Security</h1>
+  <p class="sub">FOMO · Last updated: 18 August 2026</p>
+
+  <div class="box">
+    <p>This page explains how what you entrust to us is protected, and how to
+    report a security problem. The code is open: everything stated here can be
+    checked on <a href="https://github.com/Oriburr/FESTES">GitHub</a>.</p>
+  </div>
+
+  <h2>How data travels</h2>
+  <p>All communication between the app and the servers is encrypted with TLS
+  (HTTPS). No request is made in the clear.</p>
+
+  <h2>Passwords</h2>
+  <p>They are handled by <strong>Firebase Authentication</strong>, from Google.
+  The app never sees your password, does not store it and cannot recover it. You
+  can also sign in with a Google account and have no password at all.</p>
+
+  <h2>Who can write what</h2>
+  <p>The database has declared, public access rules
+  (<code>firestore.rules</code>). The ones that matter:</p>
+  <ul>
+    <li><strong>The event catalogue is read-only for everyone.</strong> No client
+    can ever write to it. The writers are the automated server process, which
+    runs with credentials that never travel inside the app.</li>
+    <li><strong>Only you can read and write your profile</strong>, and only the
+    specific fields the app uses, with the expected types. A tampered client
+    cannot add arbitrary fields.</li>
+    <li><strong>Special permissions cannot be claimed.</strong> The fields that
+    grant roles — for example, being able to review what a town council submits —
+    are explicitly denied to every client: only the server process can write
+    them. A permission a client could grant itself is a permission anyone can
+    grant themselves.</li>
+    <li><strong>Nothing a town council sends is published on its own.</strong> A
+    person reviews it, and the person approving does not write to the catalogue
+    either — the server process does. So a stolen phone belonging to someone with
+    review rights cannot put invented events in front of readers.</li>
+  </ul>
+
+  <h2>Your location</h2>
+  <p>It is not sent anywhere. It is used on the phone to work out distances and
+  is neither stored nor tied to your account. There is no background tracking,
+  and the app does not request the permission that would be needed for it.</p>
+
+  <h2>Minimisation</h2>
+  <p>The server holds only what is needed for what you asked for. If you do not
+  turn notifications on, your town and the artists you follow never leave the
+  phone. If you turn them off, that record is <strong>deleted</strong>.</p>
+
+  <h2>Keys and secrets</h2>
+  <p>The credentials that allow writing to the database exist only in the
+  continuous-integration environment, never inside the app. An installed app can
+  be opened and read, so nothing inside one can be treated as secret — which is
+  why we put none there.</p>
+
+  <h2>What we cannot promise</h2>
+  <p>No system is perfectly secure, and this was built by a small team. We
+  do what we know how to do and write it down so it can be checked, but we cannot
+  guarantee there are no flaws.</p>
+
+  <h2>Found a problem? Tell us</h2>
+  <p>If you believe you have found a vulnerability, write to
+  <a href="mailto:n23639003@gmail.com">n23639003@gmail.com</a> with as much detail
+  as you can: what you saw, how to reproduce it, and what impact you think it has.</p>
+  <p><strong>Our commitment:</strong> we will reply, we will not take legal action
+  against anyone researching in good faith who tells us privately, and we will let
+  you know when it is fixed.</p>
+  <p><strong>What we ask:</strong> do not access or modify other people's data, do
+  not degrade the service, and give us reasonable time to fix it before going
+  public.</p>
+
+  <h2>If there were a breach</h2>
+  <p>If a security breach affecting personal data occurred, we would notify the
+  data protection authority within 72 hours of becoming aware of it, and tell you
+  directly where it presents a high risk to you, as the GDPR requires.</p>
+</section>
+
+<footer><p>FOMO · <a href="https://github.com/Oriburr/FESTES">codi obert a GitHub</a></p></footer>
+</main>
+<script src="idioma.js"></script>
+</body>
+</html>
