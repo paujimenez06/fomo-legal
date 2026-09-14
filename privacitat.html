@@ -24,14 +24,16 @@
 <!-- ══════════════════ CATALÀ ══════════════════ -->
 <section id="ca">
   <h1>Política de privacitat</h1>
-  <p class="sub">FOMO · Darrera actualització: 1 de setembre de 2026</p>
+  <p class="sub">FOMO · Darrera actualització: 14 de setembre de 2026</p>
 
   <div class="box">
-    <p><strong>El resum, en tres frases.</strong> La teva ubicació no surt mai del
-    telèfon: es fa servir dins l'aplicació per calcular a quina distància tens
-    cada festa. Només guardem al servidor el que fa falta per a allò que has
-    demanat expressament. I si desactives les notificacions, les dades que
-    servien per enviar-te-les <strong>s'esborren</strong>, no es desen apagades.</p>
+    <p><strong>El resum, en quatre frases.</strong> Per fer servir l'aplicació
+    <strong>no cal cap compte</strong>: només per rebre avisos. La teva ubicació
+    no surt mai del telèfon: es fa servir dins l'aplicació per calcular a quina
+    distància tens cada festa. Només guardem al servidor el que fa falta per a
+    allò que has demanat expressament. I si desactives les notificacions, les
+    dades que servien per enviar-te-les <strong>s'esborren</strong>, no es desen
+    apagades.</p>
   </div>
 
   <h2>Qui és el responsable</h2>
@@ -49,16 +51,22 @@
       <td>Consentiment (el permís del sistema)</td>
     </tr>
     <tr>
-      <td>Adreça electrònica i nom</td>
-      <td>Tenir un compte i poder entrar-hi</td>
-      <td>Firebase Authentication i Firestore</td>
+      <td>Adreça electrònica, i el nom <strong>només si el dones</strong></td>
+      <td>Tenir un compte i poder entrar-hi. El compte només cal per rebre avisos</td>
+      <td>Firebase Authentication; el nom, també a Firestore</td>
       <td>Execució del servei que has demanat</td>
     </tr>
     <tr>
-      <td>Data de naixement</td>
-      <td>Comprovar que tens l'edat mínima. Es demana en registrar-te</td>
-      <td>Firestore</td>
+      <td>Identificador intern del compte</td>
+      <td>Saber quines dades són de quin compte, per poder-les esborrar juntes</td>
+      <td>Firebase Authentication i Firestore</td>
       <td>Execució del servei</td>
+    </tr>
+    <tr>
+      <td>Que tens 14 anys o més</td>
+      <td>Complir l'edat mínima dels termes. Ho marques en registrar-te</td>
+      <td><strong>Enlloc.</strong> No es desa ni la data ni la resposta</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>Poble de referència i artistes que segueixes</td>
@@ -73,12 +81,22 @@
       <td>Consentiment</td>
     </tr>
     <tr>
-      <td>Preferències (interessos, radi, idioma, tema)</td>
+      <td>Preferències (interessos, radi, idioma, tema, poble i artistes seguits)</td>
       <td>Recordar com vols veure la llista</td>
-      <td><strong>Només al telèfon.</strong> No s'envien</td>
+      <td><strong>Només al telèfon.</strong> No s'envien, llevat del que diu la fila de notificacions</td>
       <td>Execució del servei</td>
     </tr>
+    <tr>
+      <td>Dades tècniques que envien els components de Firebase (identificador d'instal·lació, versió del sistema i de l'aplicació, errors de connexió)</td>
+      <td>Que l'autenticació, la base de dades i les notificacions funcionin</td>
+      <td>Google</td>
+      <td>Interès legítim en el funcionament del servei</td>
+    </tr>
   </table>
+
+  <p>Els comptes creats <strong>abans del 14 de setembre de 2026</strong> tenen
+  guardada la data de naixement que es demanava llavors. Ja no es fa servir per
+  a res, no se'n demana cap de nova, i s'esborra amb el compte.</p>
 
   <h2>Què NO fem</h2>
   <ul>
@@ -105,10 +123,14 @@
     <li><strong>Deezer</strong> i <strong>MusicBrainz</strong>, quan cerques o
     obres la fitxa d'un artista. Reben el nom cercat, mai qui el cerca.</li>
     <li><strong>Google Fonts</strong>, per a la tipografia.</li>
+    <li><strong>Els webs d'on surten les imatges dels esdeveniments</strong>
+    (per exemple, <em>agenda.cultura.gencat.cat</em>), que el telèfon descarrega
+    directament d'allà quan les mostra.</li>
   </ul>
-  <p>Si toques un enllaç extern (Spotify, YouTube, SoundCloud, TikTok, venda
-  d'entrades…), s'obre al navegador i a partir d'aquí s'hi aplica la política
-  d'aquell lloc, no aquesta.</p>
+  <p>Si toques un enllaç extern (la fitxa d'un esdeveniment a la seva font,
+  Google Maps, Spotify, YouTube, SoundCloud, TikTok, venda d'entrades…), s'obre
+  al navegador i a partir d'aquí s'hi aplica la política d'aquell lloc, no
+  aquesta.</p>
 
   <h2>On es tracten les dades</h2>
   <p>Firebase és un servei de Google. Encara que el servei el contractem des
@@ -116,8 +138,9 @@
   l'Espai Econòmic Europeu</strong>, principalment als Estats Units. Aquestes
   transferències es fan a l'empara de les clàusules contractuals tipus aprovades
   per la Comissió Europea. Els altres serveis que hem llistat (OpenStreetMap, Deezer,
-  MusicBrainz, Google Fonts) reben la petició directament del teu dispositiu, i
-  per tant la teva adreça IP, sense que hi intervinguem.</p>
+  MusicBrainz, Google Fonts i els webs de les imatges) reben la petició
+  directament del teu dispositiu, i per tant la teva adreça IP, sense que hi
+  intervinguem.</p>
 
   <h2>Quant de temps ho guardem</h2>
   <ul>
@@ -125,7 +148,8 @@
     <li><strong>Les dades de notificacions</strong>: fins que les desactivis. En
     desactivar-les s'esborra el registre del servidor.</li>
     <li><strong>Les preferències del telèfon</strong>: fins que desinstal·lis
-    l'aplicació o n'esborris les dades.</li>
+    l'aplicació, n'esborris les dades o esborris el compte des de l'aplicació,
+    que també les esborra.</li>
   </ul>
 
   <h2>Els teus drets</h2>
@@ -133,7 +157,7 @@
   oposició al tractament, i retirar el consentiment quan vulguis. Pots desactivar les
   notificacions des de l'aplicació mateixa, i en fer-ho s'esborren del servidor
   les dades que hi servien. <strong>El compte l'esborres tu mateix des de
-  l'aplicació</strong>, a Perfil → Ajustos → Esborrar el compte: és immediat, no
+  l'aplicació</strong>, a la pestanya Ajustos → Esborrar el compte: és immediat, no
   cal que ens diguis per què i no es pot desfer. Si ja no tens l'aplicació
   instal·lada o no hi pots entrar, escriu-nos a l'adreça de dalt i ho farem
   nosaltres. Els passos, i què marxa exactament, són a <a
@@ -142,7 +166,7 @@
 
   <h2>Menors</h2>
   <p>L'aplicació no s'adreça a menors de 14 anys i no en recull dades
-  conscientment.</p>
+  conscientment. Per crear un compte cal confirmar que en tens 14 o més.</p>
 
   <h2>Canvis</h2>
   <p>Si aquesta política canvia, actualitzarem la data del principi i, si el
@@ -152,15 +176,16 @@
 <!-- ══════════════════ CASTELLANO ══════════════════ -->
 <section id="es" hidden>
   <h1>Política de privacidad</h1>
-  <p class="sub">FOMO · Última actualización: 1 de septiembre de 2026</p>
+  <p class="sub">FOMO · Última actualización: 14 de septiembre de 2026</p>
 
   <div class="box">
-    <p><strong>El resumen, en tres frases.</strong> Tu ubicación no sale nunca
-    del teléfono: se usa dentro de la aplicación para calcular a qué distancia
-    tienes cada fiesta. Solo guardamos en el servidor lo necesario para aquello
-    que has pedido expresamente. Y si desactivas las notificaciones, los datos
-    que servían para enviártelas <strong>se borran</strong>, no se guardan
-    apagados.</p>
+    <p><strong>El resumen, en cuatro frases.</strong> Para usar la aplicación
+    <strong>no hace falta ninguna cuenta</strong>: solo para recibir avisos. Tu
+    ubicación no sale nunca del teléfono: se usa dentro de la aplicación para
+    calcular a qué distancia tienes cada fiesta. Solo guardamos en el servidor lo
+    necesario para aquello que has pedido expresamente. Y si desactivas las
+    notificaciones, los datos que servían para enviártelas <strong>se
+    borran</strong>, no se guardan apagados.</p>
   </div>
 
   <h2>Quién es el responsable</h2>
@@ -178,16 +203,22 @@
       <td>Consentimiento (el permiso del sistema)</td>
     </tr>
     <tr>
-      <td>Correo electrónico y nombre</td>
-      <td>Tener una cuenta y poder acceder</td>
-      <td>Firebase Authentication y Firestore</td>
+      <td>Correo electrónico, y el nombre <strong>solo si lo das</strong></td>
+      <td>Tener una cuenta y poder acceder. La cuenta solo hace falta para recibir avisos</td>
+      <td>Firebase Authentication; el nombre, también en Firestore</td>
       <td>Ejecución del servicio solicitado</td>
     </tr>
     <tr>
-      <td>Fecha de nacimiento</td>
-      <td>Comprobar que tienes la edad mínima. Se pide al registrarte</td>
-      <td>Firestore</td>
+      <td>Identificador interno de la cuenta</td>
+      <td>Saber qué datos son de qué cuenta, para poder borrarlos juntos</td>
+      <td>Firebase Authentication y Firestore</td>
       <td>Ejecución del servicio</td>
+    </tr>
+    <tr>
+      <td>Que tienes 14 años o más</td>
+      <td>Cumplir la edad mínima de los términos. Lo marcas al registrarte</td>
+      <td><strong>A ningún sitio.</strong> No se guarda ni la fecha ni la respuesta</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>Pueblo de referencia y artistas que sigues</td>
@@ -202,12 +233,22 @@
       <td>Consentimiento</td>
     </tr>
     <tr>
-      <td>Preferencias (intereses, radio, idioma, tema)</td>
+      <td>Preferencias (intereses, radio, idioma, tema, pueblo y artistas seguidos)</td>
       <td>Recordar cómo quieres ver la lista</td>
-      <td><strong>Solo en el teléfono.</strong> No se envían</td>
+      <td><strong>Solo en el teléfono.</strong> No se envían, salvo lo que dice la fila de notificaciones</td>
       <td>Ejecución del servicio</td>
     </tr>
+    <tr>
+      <td>Datos técnicos que envían los componentes de Firebase (identificador de instalación, versión del sistema y de la aplicación, errores de conexión)</td>
+      <td>Que la autenticación, la base de datos y las notificaciones funcionen</td>
+      <td>Google</td>
+      <td>Interés legítimo en el funcionamiento del servicio</td>
+    </tr>
   </table>
+
+  <p>Las cuentas creadas <strong>antes del 14 de septiembre de 2026</strong>
+  tienen guardada la fecha de nacimiento que se pedía entonces. Ya no se usa
+  para nada, no se pide ninguna nueva, y se borra con la cuenta.</p>
 
   <h2>Qué NO hacemos</h2>
   <ul>
@@ -234,10 +275,13 @@
     <li><strong>Deezer</strong> y <strong>MusicBrainz</strong>, al buscar o
     abrir la ficha de un artista. Reciben el nombre buscado, nunca quién busca.</li>
     <li><strong>Google Fonts</strong>, para la tipografía.</li>
+    <li><strong>Las webs de las que salen las imágenes de los eventos</strong>
+    (por ejemplo, <em>agenda.cultura.gencat.cat</em>), que el teléfono descarga
+    directamente de allí cuando las muestra.</li>
   </ul>
-  <p>Si tocas un enlace externo (Spotify, YouTube, SoundCloud, TikTok, venta de
-  entradas…), se abre en el navegador y a partir de ahí se aplica la política de
-  ese sitio, no esta.</p>
+  <p>Si tocas un enlace externo (la ficha de un evento en su fuente, Google Maps,
+  Spotify, YouTube, SoundCloud, TikTok, venta de entradas…), se abre en el
+  navegador y a partir de ahí se aplica la política de ese sitio, no esta.</p>
 
   <h2>Dónde se tratan los datos</h2>
   <p>Firebase es un servicio de Google. Aunque el servicio se contrate desde
@@ -245,8 +289,8 @@
   Económico Europeo</strong>, principalmente en Estados Unidos. Estas
   transferencias se amparan en las cláusulas contractuales tipo aprobadas por la
   Comisión Europea. Los demás servicios listados (OpenStreetMap, Deezer, MusicBrainz,
-  Google Fonts) reciben la petición directamente de tu dispositivo, y por tanto
-  tu dirección IP, sin que nosotros intervengamos.</p>
+  Google Fonts y las webs de las imágenes) reciben la petición directamente de tu
+  dispositivo, y por tanto tu dirección IP, sin que nosotros intervengamos.</p>
 
   <h2>Cuánto tiempo lo guardamos</h2>
   <ul>
@@ -254,7 +298,8 @@
     <li><strong>Los datos de notificaciones</strong>: hasta que las desactives.
     Al desactivarlas se borra el registro del servidor.</li>
     <li><strong>Las preferencias del teléfono</strong>: hasta que desinstales la
-    aplicación o borres sus datos.</li>
+    aplicación, borres sus datos o borres la cuenta desde la aplicación, que
+    también las borra.</li>
   </ul>
 
   <h2>Tus derechos</h2>
@@ -262,7 +307,7 @@
   u oposición al tratamiento, y retirar el consentimiento cuando quieras. Puedes desactivar las
   notificaciones desde la propia aplicación, y al hacerlo se borran del servidor
   los datos que servían para enviarlas. <strong>La cuenta la borras tú mismo desde la
-  aplicación</strong>, en Perfil → Ajustes → Borrar la cuenta: es inmediato, no
+  aplicación</strong>, en la pestaña Ajustes → Borrar la cuenta: es inmediato, no
   hace falta que nos digas por qué y no se puede deshacer. Si ya no tienes la
   aplicación instalada o no puedes entrar, escríbenos a la dirección de arriba y
   lo haremos nosotros. Los pasos, y qué se borra exactamente, están en <a
@@ -272,7 +317,7 @@
 
   <h2>Menores</h2>
   <p>La aplicación no se dirige a menores de 14 años y no recoge sus datos
-  conscientemente.</p>
+  conscientemente. Para crear una cuenta hay que confirmar que tienes 14 o más.</p>
 
   <h2>Cambios</h2>
   <p>Si esta política cambia, actualizaremos la fecha del principio y, si el
@@ -282,14 +327,15 @@
 <!-- ══════════════════ ENGLISH ══════════════════ -->
 <section id="en" hidden>
   <h1>Privacy policy</h1>
-  <p class="sub">FOMO · Last updated: 1 September 2026</p>
+  <p class="sub">FOMO · Last updated: 14 September 2026</p>
 
   <div class="box">
-    <p><strong>The short version.</strong> Your location never leaves your
-    phone: it is used inside the app to work out how far away each festival is.
-    We only store on the server what is needed for something you explicitly
-    asked for. And if you turn notifications off, the data used to send them is
-    <strong>deleted</strong>, not kept in a switched-off state.</p>
+    <p><strong>The short version.</strong> You <strong>do not need an
+    account</strong> to use the app — only to get notifications. Your location
+    never leaves your phone: it is used inside the app to work out how far away
+    each festival is. We only store on the server what is needed for something
+    you explicitly asked for. And if you turn notifications off, the data used to
+    send them is <strong>deleted</strong>, not kept in a switched-off state.</p>
   </div>
 
   <h2>Who is responsible</h2>
@@ -307,16 +353,22 @@
       <td>Consent (the system permission)</td>
     </tr>
     <tr>
-      <td>Email address and name</td>
-      <td>Having an account and signing in</td>
-      <td>Firebase Authentication and Firestore</td>
+      <td>Email address, and a name <strong>only if you give one</strong></td>
+      <td>Having an account and signing in. An account is only needed for notifications</td>
+      <td>Firebase Authentication; the name, in Firestore as well</td>
       <td>Performance of the service you asked for</td>
     </tr>
     <tr>
-      <td>Date of birth</td>
-      <td>Checking you meet the minimum age. Asked when you sign up</td>
-      <td>Firestore</td>
+      <td>The account's internal identifier</td>
+      <td>Knowing which data belongs to which account, so it can all be deleted together</td>
+      <td>Firebase Authentication and Firestore</td>
       <td>Performance of the service</td>
+    </tr>
+    <tr>
+      <td>That you are 14 or older</td>
+      <td>Meeting the minimum age in the terms. You tick it when you sign up</td>
+      <td><strong>Nowhere.</strong> Neither a date nor the answer is stored</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>Home town and the artists you follow</td>
@@ -331,12 +383,22 @@
       <td>Consent</td>
     </tr>
     <tr>
-      <td>Preferences (interests, radius, language, theme)</td>
+      <td>Preferences (interests, radius, language, theme, home town and followed artists)</td>
       <td>Remembering how you want the list shown</td>
-      <td><strong>On the phone only.</strong> Never sent</td>
+      <td><strong>On the phone only.</strong> Never sent, except as the notifications row says</td>
       <td>Performance of the service</td>
     </tr>
+    <tr>
+      <td>Technical data sent by the Firebase components (installation identifier, system and app version, connection errors)</td>
+      <td>Keeping sign-in, the database and notifications working</td>
+      <td>Google</td>
+      <td>Legitimate interest in the service working</td>
+    </tr>
   </table>
+
+  <p>Accounts created <strong>before 14 September 2026</strong> hold the date of
+  birth that was asked for then. It is no longer used for anything, no new one
+  is asked for, and it is deleted with the account.</p>
 
   <h2>What we do NOT do</h2>
   <ul>
@@ -362,27 +424,30 @@
     <li><strong>Deezer</strong> and <strong>MusicBrainz</strong>, when you search
     for or open an artist. They receive the name searched, never who searched it.</li>
     <li><strong>Google Fonts</strong>, for typography.</li>
+    <li><strong>The websites event images come from</strong> (for instance
+    <em>agenda.cultura.gencat.cat</em>), which the phone downloads them from
+    directly when it shows them.</li>
   </ul>
-  <p>If you tap an external link (Spotify, YouTube, SoundCloud, TikTok, ticket
-  sales…), it opens in your browser and that site's policy applies from then on,
-  not this one.</p>
+  <p>If you tap an external link (an event's page at its source, Google Maps,
+  Spotify, YouTube, SoundCloud, TikTok, ticket sales…), it opens in your browser
+  and that site's policy applies from then on, not this one.</p>
 
   <h2>Where the data is processed</h2>
   <p>Firebase is a Google service. Even where the service is contracted from
   Europe, <strong>Google may process this data on servers outside the European
   Economic Area</strong>, mainly in the United States. Those transfers rely on
   the standard contractual clauses approved by the European Commission. The other
-  services listed (OpenStreetMap, Deezer, MusicBrainz, Google Fonts) receive the request
-  straight from your device, and therefore your IP address, with no involvement
-  from us.</p>
+  services listed (OpenStreetMap, Deezer, MusicBrainz, Google Fonts and the image
+  websites) receive the request straight from your device, and therefore your IP
+  address, with no involvement from us.</p>
 
   <h2>How long we keep it</h2>
   <ul>
     <li><strong>The account</strong>: while it is open.</li>
     <li><strong>Notification data</strong>: until you turn notifications off,
     which deletes the server-side record.</li>
-    <li><strong>On-device preferences</strong>: until you uninstall the app or
-    clear its data.</li>
+    <li><strong>On-device preferences</strong>: until you uninstall the app,
+    clear its data, or delete your account from the app, which clears them too.</li>
   </ul>
 
   <h2>Your rights</h2>
@@ -390,7 +455,7 @@
   objection, and withdraw consent at any time. You can turn notifications off in the
   app itself, which erases the data that served them from the server.
   <strong>You delete the account yourself, from inside the app</strong>, under
-  Profile → Settings → Delete account: it is immediate, we do not ask why, and it
+  the Settings tab → Delete account: it is immediate, we do not ask why, and it
   cannot be undone. If you no longer have the app installed, or cannot sign in,
   write to the address above and we will do it. The steps, and exactly what
   goes, are on <a href="esborrar-compte.html">Deleting your account</a>. You may also lodge a complaint with the
@@ -398,7 +463,7 @@
 
   <h2>Children</h2>
   <p>The app is not directed at children under 14 and does not knowingly collect
-  their data.</p>
+  their data. Creating an account requires confirming you are 14 or older.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes we will update the date at the top and, where the
